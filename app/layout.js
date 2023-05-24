@@ -1,5 +1,5 @@
 import { Inter } from 'next/font/google';
-import Nav from '@/components/nav/nav';
+import Nav from '@/components/nav/Nav';
 
 import './globals.css';
 
@@ -21,8 +21,10 @@ export default function RootLayout({ children }) {
         <header>
           <Nav />
         </header>
-        {children}
-        <footer>footer</footer>
+        <main className="container m-auto mt-4 px-4">{children}</main>
+        <footer className="flex h-10 justify-center items-center shadow-inner">
+          footer
+        </footer>
       </body>
     </html>
   );
